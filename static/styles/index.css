@@ -1,0 +1,27 @@
+
+body{
+    background-color: #cbe2ce;
+}
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    padding: 20px;
+}
+
+h2, p, input {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+#SpeechContainer{
+    margin: 10px;
+}
+
+#submitButton{
+    background-color: darkcyan;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+
+}

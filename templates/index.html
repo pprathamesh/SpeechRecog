@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!--Name: Prathamesh Puranik. Copyright © 2021 by Prathamesh Puranik-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Speech Recognition </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/index.css') }}">
+
+</head>
+<body>
+<div id="SpeechContainer">
+    <h1>Speech Recognition</h1>
+    <h2>Upload new File (Only .wav files are supported)</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file"/>
+        <br>
+        <input type="submit" id="submitButton" name="Transcribe"/>
+    </form>
+
+    {% if transcript != "" %}
+    <div id="speechTranscriptContainer">
+        <h1>Transcript</h1>
+        <p>{{transcript}}</p>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
